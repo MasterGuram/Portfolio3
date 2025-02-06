@@ -109,7 +109,7 @@ we should apply position: absolute; and z-index: 5;*/
     /*stick the menu to the bottom*/
 }
 .logo {
-    font-size: 50px;
+    font-size: 30px;
     color: #fff;
 }
 .menu__list {
