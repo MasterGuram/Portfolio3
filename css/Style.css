@@ -790,6 +790,30 @@ we should apply position: absolute; and z-index: 5;*/
     }
 }
 
+@media (max-width: 1070px) { /*imported*/
+    .home-info h1 {
+        font-size: 45px;
+    }
+    .home-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .home-img {
+        order: 1;
+    }
+    .home-img img {
+        margin: 0 auto;
+    }
+    .home-info {
+        order: 2;
+    }
+    .media-icons {
+        order: 3;
+        flex-direction: row;
+        gap: 40px;
+    }
+}
+
 @media (max-width: 1040px) {
     .video__content {
         width: 100%;
