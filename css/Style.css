@@ -164,7 +164,7 @@ we should apply position: absolute; and z-index: 5;*/
 }
 /* End Styles for all sections */
 
-/* section Home (imported)*/
+/* Home (imported)*/
 .home {
     padding: 80px 0;
     min-height: 100vh;
@@ -236,9 +236,9 @@ we should apply position: absolute; and z-index: 5;*/
     font-size: 18px;
     animation: arrow-down ease 2s infinite;
 }
-/* End section Home */
+/* end Home */
 
-/* === section About (imported)=== */
+/* About (imported) */
 .about-wrapper {
     display: flex;
     align-items: center;
@@ -812,6 +812,10 @@ we should apply position: absolute; and z-index: 5;*/
         flex-direction: row;
         gap: 40px;
     }
+    .about-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 @media (max-width: 1040px) {
@@ -998,6 +1002,11 @@ we should apply position: absolute; and z-index: 5;*/
     .blog {
         padding-bottom: 50px;
     }
+    .professional-list {
+    flex-wrap: wrap;
+    }
 }
+
+
 
 
