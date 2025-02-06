@@ -250,6 +250,7 @@ we should apply position: absolute; and z-index: 5;*/
 }
 .about-img img {
     border-radius: 10px;
+    width: 90%;
 }
 .about-info {
     max-width: 600px;
