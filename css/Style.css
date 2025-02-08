@@ -564,46 +564,62 @@ we should apply position: absolute; and z-index: 5;*/
 }
 /* endrvices */
 
+/* Footer */
 .footer {
-    background-color: #151515;
+    background-color: var(--second-color);
     padding: 50px 0 32px;
     color: #fff;
 }
-
 .footer__menu {
     display: flex;
     justify-content: space-around;
     margin-bottom: 50px;
 }
-
 .footer__menu-list {
     min-width: 250px;
 }
-
-.footer__menu-title {
+.footer__menu-item h2 {
+    font-size: 35px;
+    font-weight: 600;
+    opacity: .8;background: linear-gradient(to top, transparent 0%, #fff 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.footer__menu-item h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.footer__menu-item ul {
+    display: column;
+    gap: 30px;
+    text-transform: uppercase;
+}
+.footer__menu-item p {
+    font-size: var(--normal-font-size);
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+/* .footer__menu-title {
     font-size: 24px;
     font-weight: 700;
     padding-bottom: 20px;
-}
-
+} */
 .footer__menu-item + .footer__menu-item {
     /*with this method padding starts from the second element*/
     padding-top: 20px;
 }
-
 .app {
     display: flex;
     justify-content: center;
     gap: 40px;
     margin-bottom: 52px;
 }
-
 .footer__copy {
     min-width: 800px;
     margin: 0 auto 30px;
     text-align: center;
 }
-
 .footer__copy-text {
     display: flex;
     flex-direction: column;
@@ -611,13 +627,20 @@ we should apply position: absolute; and z-index: 5;*/
     text-align: center;
     /* Optional: Center the text horizontally */
 }
-
+.footer-copyright {
+    font-size: var(--normal-font-size);
+    font-weight: 300;
+    margin-top: 30px;
+    text-align: center;
+    padding: 0 15px;
+}
 .copy__nav-list {
     margin-top: 30px;
     display: flex;
     justify-content: center;
     gap: 40px;
 }
+/* end Footer */
 
 .main {
     flex-grow: 1;
