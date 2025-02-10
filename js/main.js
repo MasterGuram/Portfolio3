@@ -178,15 +178,5 @@ portfolioCloseBtn.forEach(button => {
 
   ScrollReveal().reveal('.home-info h1, {delay: 500, origin: "left"}');
 
-  /// This is home page slider - to be deleted
-  // const swiper = new Swiper(".swiper", {
-  //   effect: "fade",
-  //   pagination: {
-  //     el: ".swiper-pagination",
-  //   },
-  //   autoplay: {
-  //     delay: 3000,
-  //     disableOnInteraction: false,
-  //   },
-  // }); 
+ 
 
