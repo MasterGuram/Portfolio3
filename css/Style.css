@@ -15,7 +15,7 @@ html {
     --hover-color: #614fd0;
 
     /*=======Background colors=======*/
-    --body-bg-color: #fefefe;
+    --body-bg-color: gray;
     --card-bg-color: #fff;
     --modal-bg-color: #fff;
     --bg-transparent-color: rgba(0, 0, 0, 0.1);
@@ -38,6 +38,75 @@ html {
     --scroll-thumb-color: #70768a;
     --scroll-thumb-hover-color: #454f6b;
 }
+.dark-theme {
+    /*=======Main theme colors=======*/
+    --first-color: #fff;
+    --second-color: #6a59d1;
+    --third-color: #a9afc3;
+
+    /*=======Background colors=======*/
+    --body-bg-color: #0e1b31;
+    --card-bg-color: #132347;
+    --modal-bg-color: #102048;
+    --bg-transparent-color: rgba(255, 255, 255, 0.1);
+    --bg-transparent-color-01: rgba(255, 255, 255, 0.1);
+    --liner-color: #454f6b;
+
+    /*=======Color Filter=======*/
+    --color-filter: invert(0);
+
+    /*=======Scroll bar colors=======*/
+    --scroll-bar-color: #c1ceff;
+    --scroll-thumb-color: #282f4e;
+    --scroll-thumb-hover-color: #454f6b;
+}
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+button {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+html {
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    font-size: 16px;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    color: var(--first-color);
+    background: var(--body-bg-color);
+    overflow-x: hidden;
+}
+/* .container {
+    min-width: 1250px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+} */
 /* End General styles */
 
 *,
@@ -126,6 +195,13 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.theme-btn .fa-sun,
+.theme-btn.sun .fa-moon {
+    display: none;
+}
+.theme-btn.sun .fa-sun {
+    display: block;
 }
 
 /* Header */
@@ -228,7 +304,7 @@ we should apply position: absolute; and z-index: 5;*/
     justify-content: space-between;
     align-items: center;
     gap: 60px;
-    background-color: gray;
+    /* background-color: gray; */
 }
 .media-icons {
     display: flex;
@@ -951,7 +1027,6 @@ we should apply position: absolute; and z-index: 5;*/
     bottom: 0;
     top: 0;
 }
-
 .swiper-slide {
     background-repeat: no-repeat;
     background-size: cover;
@@ -959,7 +1034,6 @@ we should apply position: absolute; and z-index: 5;*/
     height: 100vh;
     /*necessary for the image to appear*/
 }
-
 .swiper-pagination-bullet {
     width: 120px;
     height: 3px;
@@ -968,34 +1042,27 @@ we should apply position: absolute; and z-index: 5;*/
     opacity: 1;
     margin: 0 15px !important;
 }
-
 .swiper-pagination-bullets.swiper-pagination-horizontal {
     bottom: 50px;
 }
-
 .swiper-pagination-bullet-active {
     height: 6px;
     background-color: #fff;
 }
-
 .important {
     padding-bottom: 150px;
 }
-
 .important__title {
     margin-bottom: 20px;
 }
-
 .important__text {
     max-width: 580px;
     margin: 0 auto 50px;
 }
-
 .important__list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
-
 .important__item-img {
     margin-bottom: 20px;
 }
@@ -1007,37 +1074,31 @@ we should apply position: absolute; and z-index: 5;*/
 .blog {
     padding-bottom: 150px;
 }
-
 .blog__items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
     margin-bottom: 70px;
 }
-
 .blog__item {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
 .blog__item-img {
     margin-bottom: 30px;
     width: 100%;
 }
-
 .blog__item-title {
     flex-basis: 446px;
     font-size: 24px;
     font-weight: 700;
 }
-
 .blog__item-link {
     color: #fff;
     background-color: #0066FF;
     padding: 4px 20px;
 }
-
 .showmore-link {
     text-transform: uppercase;
     background-color: #151515;
@@ -1048,22 +1109,18 @@ we should apply position: absolute; and z-index: 5;*/
     text-align: center;
     display: block;
 }
-
 .choose {
     padding: 100px 0 150px;
 }
-
 .tabs {
     margin-bottom: 70px;
 }
-
 .tabs__btn {
     padding: 0 150px 100px;
     display: flex;
     justify-content: space-between;
     gap: 80px;
 }
-
 .tabs__btn-item {
     font-size: 24px;
     font-weight: 700;
@@ -1072,54 +1129,44 @@ we should apply position: absolute; and z-index: 5;*/
     background-color: transparent;
     padding: 0;
 }
-
 .tabs__btn-item--active {
     color: #0066FF;
 }
-
 .tabs__content-item {
     display: none;
     grid-template-columns: repeat(4, 1fr);
     gap: 100px 40px;
 }
-
 .tabs__content-item.tabs__content-item--active {
     display: grid;
 }
-
 .card {
     text-align: center;
 }
-
 .card__content {
     padding: 0 5px;
     border: 1px solid #0066FF;
     border-top: 0;
 }
-
 .card__img {
     display: block;
     /*картинка это строчный элемент. Мы должны переделать его в блочный*/
 }
-
 .card__title {
     padding-top: 20px;
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 20px;
 }
-
 .card__text {
     margin-bottom: 20px;
 }
-
 .card__price {
     margin-bottom: 20px;
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 24px;
 }
-
 .card__link {
     display: block;
     color: #0066FF;
@@ -1141,13 +1188,11 @@ we should apply position: absolute; and z-index: 5;*/
     display: none;
     /*button will not be visible in full screen mode*/
 }
-
 .menu__btn span {
     height: 2px;
     background-color: #fff;
     width: 100%;
 }
-
 .card__img {
     width: 100%;
 }

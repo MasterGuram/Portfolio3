@@ -86,28 +86,28 @@ const savedIcon = localStorage.getItem("saved-icon")
 
 if(savedTheme){
     document.body.classList[savedTheme === "dark" ? "add" : "remove"]("dark-theme")
-    themeBtn.classList[savedIcon === "sun" ? "add": "remove"]("sun")
+    themeBtn.classList[savedIcon === "sun" ? "add" : "remove"]("sun")
 }
 
 // Toggle menu
-const navBtn = document.querySelector(".nav-menu-btn")
-const navBar = document.querySelector(".nav")
-const navMenu = document.querySelector(".nav-menu")
-const navLinks = document.querySelectorAll(".nav-link")
+// const navBtn = document.querySelector(".nav-menu-btn")
+// const navBar = document.querySelector(".nav")
+// const navMenu = document.querySelector(".nav-menu")
+// const navLinks = document.querySelectorAll(".nav-link")
 
-navBtn.addEventListener("click", function(){
-    navBtn.classList.toggle("close")
-    navBar.classList.toggle("active")
-    navMenu.classList.toggle("active")
-})
+// navBtn.addEventListener("click", function(){
+//     navBtn.classList.toggle("close")
+//     navBar.classList.toggle("active")
+//     navMenu.classList.toggle("active")
+// })
 
-navLinks.forEach(function(link){
-    link.addEventListener("click", function(){
-        navBtn.classList.remove("close")
-        navBar.classList.remove("active")
-        navMenu.classList.remove("active")        
-    })
-})
+// navLinks.forEach(function(link){
+//     link.addEventListener("click", function(){
+//         navBtn.classList.remove("close")
+//         navBar.classList.remove("active")
+//         navMenu.classList.remove("active")        
+//     })
+// })
 
 //Services section - Modal
 const serviceModal = document.querySelectorAll(".service-modal")
@@ -155,28 +155,28 @@ portfolioCloseBtn.forEach(button => {
     })
 })
 
-  var swiper = new Swiper(".client-swiper", {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
+//   var swiper = new Swiper(".client-swiper", {
+//     slidesPerView: 1,
+//     spaceBetween: 30,
+//     loop: true,
+//     pagination: {
+//       el: ".swiper-pagination",
+//       clickable: true,
+//     },
+//     navigation: {
+//       nextEl: ".swiper-button-next",
+//       prevEl: ".swiper-button-prev",
+//     },
+//   });
 
-  ScrollReveal({
-    reset: true,
-    distance: "60px",
-    duration: 2500,
-    delay: 100
-  })
+//   ScrollReveal({
+//     reset: true,
+//     distance: "60px",
+//     duration: 2500,
+//     delay: 100
+//   })
 
-  ScrollReveal().reveal('.home-info h1, {delay: 500, origin: "left"}');
+//   ScrollReveal().reveal('.home-info h1, {delay: 500, origin: "left"}');
 
  
 
