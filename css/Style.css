@@ -301,7 +301,7 @@ we should apply position: absolute; and z-index: 5;*/
     gap: 35px;
 }
 .menu__list-link {
-    color: white;
+    color: gray;
     text-transform: uppercase;
     font-weight: 700;
 }
@@ -1484,7 +1484,6 @@ we should apply position: absolute; and z-index: 5;*/
     flex-wrap: wrap;
     }
 }
-
 
 
 
